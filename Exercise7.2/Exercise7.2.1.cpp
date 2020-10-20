@@ -84,7 +84,6 @@ int main(void)
 		for (size_t i = 0; i < ARRAY_SIZE; i++)
 			printf_s("%5.2d", maxLightArray[i]);
 
-
 	}
 
 	return 0;
