@@ -17,20 +17,20 @@ int main(void)
 	int max, min;
 	double avg;
 
-	randArray(RandomArray, MY_ARRAY_SIZE);
+	randArray(RandomArray, MY_ARRAY_SIZE);       //tilfældiggøre vores array
 
-	for (size_t i = 1; i<MY_ARRAY_SIZE; i++)
+	for (size_t i = 1; i<MY_ARRAY_SIZE; i++)	//printe vores array
 	{
-		printf_s("%d\n", RandomArray[i]);
+		printf_s("%d\n", RandomArray[i]);		
 	}
 
 	puts("");
 
-	max = maxValue(RandomArray, MY_ARRAY_SIZE);	
-	printf_s("Max value is %d\n", max);
+	max = maxValue(RandomArray, MY_ARRAY_SIZE);		//finde max value
+	printf_s("Max value is %d\n", max);				//printe max value
 	
-	min = minValue(RandomArray, MY_ARRAY_SIZE);
-	printf_s("Min value is %d\n", min);
+	min = minValue(RandomArray, MY_ARRAY_SIZE);		//finde min value
+	printf_s("Min value is %d\n", min);				//printe min value
 
 	avg = average(RandomArray, MY_ARRAY_SIZE);
 	printf_s("Average value is %f\n", avg);
